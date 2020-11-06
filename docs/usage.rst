@@ -29,6 +29,8 @@ To know the version of semver itself, use the following construct::
    '3.0.0-dev.2'
 
 
+.. _sec_creating_version:
+
 Creating a Version
 ------------------
 
