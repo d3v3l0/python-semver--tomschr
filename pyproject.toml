@@ -132,3 +132,52 @@ template = "changelog.d/_template.rst"
   directory = "removal"
   name = "Removals"
   showcontent = true
+
+
+[tool.poetry]
+name = "semver"
+version = "2.9.0"
+description = "Python helper for Semantic Versioning (http://semver.org/)"
+authors = [
+    "Kostiantyn Rybnikov <k-bx@k-bx.com>",
+    "Sébastien Celles <s.celles@gmail.com>",
+]
+license = "BSD-3-Clause"
+readme = "README.rst"
+homepage = "https://github.com/python-semver/python-semver"
+repository = "https://github.com/python-semver/python-semver"
+documentation = "https://python-semver.readthedocs.io/en/latest/"
+keywords = ["semantic versioning", "semver", "version", ]
+classifiers = [
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Environment :: Web Environment",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+]
+packages = [
+    { include = "src/semver/" },
+    ]
+include = ["CHANGELOG.rst", "CONTRIBUTORS", "README.rst"]
+
+
+[tool.poetry.scripts]
+pysemver = "semver:main"
+
+
+[tool.poetry.dependencies]
+python = "^3.5"
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.0"
+flake8 = "^3.7"
+isort = "^4.3"
+
