@@ -83,7 +83,7 @@ A :class:`~semver.version.Version` instance can be created in different ways:
       >>> Version(**d)
       Traceback (most recent call last):
       ...
-      ValueError: 'major' is negative. A version can only be positive.
+      ValueError: Argument -3 is negative. A version can only be positive.
 
   As a minimum requirement, your dictionary needs at least the ``major``
   key, others can be omitted. You get a ``TypeError`` if your
